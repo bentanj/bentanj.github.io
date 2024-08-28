@@ -14,8 +14,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             flex-direction: column;
+            padding: 20px;
         }
 
         .container {
@@ -25,6 +25,7 @@
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -47,6 +48,31 @@
             font-size: 1.2em;
             line-height: 1.6;
             color: #e8e4d8;
+            margin-bottom: 30px;
+        }
+
+        .social-links a {
+            color: #a79978;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 15px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .weekly-update, .archive {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            font-size: 1.8em;
+            color: #a79978;
+            border-bottom: 2px solid #a79978;
+            padding-bottom: 10px;
         }
 
         .footer {
@@ -61,12 +87,34 @@
         <h1>Welcome to My Webpage</h1>
         <img src="pfp.jpg" alt="Profile Picture" class="profile-picture">
         <p class="bio">
-            <!-- Insert your short bio here -->
             Hello! I'm Ben, a Y2 IS student who likes Marvel and D&D!
         </p>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/your_instagram" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/your_linkedin" target="_blank">LinkedIn</a>
+            <a href="https://github.com/your_github" target="_blank">GitHub</a>
+        </div>
+
+        <div class="weekly-update">
+            <h2>Latest Weekly Update</h2>
+            <!-- Add content for your latest weekly update here -->
+            <p><a href="week_latest.html">Check out this week's update</a></p>
+        </div>
+
+        <div class="archive">
+            <h2>Weekly Updates Archive</h2>
+            <!-- Add links to previous weekly updates here -->
+            <ul>
+                <li><a href="week1.html">Week 1: Getting Started</a></li>
+                <li><a href="week2.html">Week 2: Exploring HTML and CSS</a></li>
+                <!-- Add more weeks as needed -->
+            </ul>
+        </div>
     </div>
+    
     <div class="footer">
-        <p>&copy; 2024 My Name</p>
+        <p>&copy; 2024 Ben</p>
     </div>
 </body>
 </html>
