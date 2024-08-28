@@ -75,6 +75,24 @@
             padding-bottom: 10px;
         }
 
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 1em;
+            color: #e8e4d8;
+            background-color: #3e3e3e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #555555;
+        }
+
         .footer {
             margin-top: 30px;
             font-size: 0.9em;
@@ -98,18 +116,22 @@
 
         <div class="weekly-update">
             <h2>Latest Weekly Update</h2>
-            <!-- Add content for your latest weekly update here -->
-            <p><a href="week_latest.html">Check out this week's update</a></p>
+            <!-- Add a button for your latest weekly update here -->
+            <a href="week_latest.html">
+                <button class="button">Check out this week's update</button>
+            </a>
         </div>
 
         <div class="archive">
             <h2>Weekly Updates Archive</h2>
-            <!-- Add links to previous weekly updates here -->
-            <ul>
-                <li><a href="week1.html">Week 1: Getting Started</a></li>
-                <li><a href="week2.html">Week 2: Exploring HTML and CSS</a></li>
-                <!-- Add more weeks as needed -->
-            </ul>
+            <!-- Add buttons for previous weekly updates here -->
+            <a href="week1.html">
+                <button class="button">Week 1: Getting Started</button>
+            </a>
+            <a href="week2.html">
+                <button class="button">Week 2: Exploring HTML and CSS</button>
+            </a>
+            <!-- Add more buttons as needed -->
         </div>
     </div>
     
