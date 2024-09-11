@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben's Webpage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -19,8 +21,6 @@
         }
 
         .container {
-            max-width: 800px;
-            text-align: center;
             background-color: #1c1c1c;
             padding: 40px;
             border-radius: 10px;
@@ -75,21 +75,15 @@
             padding-bottom: 10px;
         }
 
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px 0;
-            font-size: 1em;
+        .btn-custom {
             color: #e8e4d8;
             background-color: #3e3e3e;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
             transition: background-color 0.3s;
-            text-align: center;
         }
 
-        .button:hover {
+        .btn-custom:hover {
             background-color: #555555;
         }
 
@@ -103,7 +97,8 @@
 <body>
     <div class="container">
         <h1>Welcome to My Webpage</h1>
-        <img src="pfp.jpg" alt="Profile Picture" class="profile-picture">
+        <img src="pfp.jpg" alt="Profile Picture" class="profile-picture img-fluid">
+
         <p class="bio">
             Hello! I'm Ben, a Y2 IS student who likes Marvel and D&D!
         </p>
@@ -114,32 +109,29 @@
             <a href="https://github.com/bentanj" target="_blank">GitHub</a>
         </div>
 
-        <div class="weekly-update">
-            <h2>Latest Weekly Update</h2>
-            <!-- Add a button for your latest weekly update here -->
-            <a href="week_latest.html">
-                <button class="button">Check out this week's update</button>
-            </a>
+        <div class="weekly-update mt-4">
+            <h2>Latest Weekly Update: Bootstrapped Justin Bieber Fanpage</h2>
+            <div class="iframe-container">
+                <iframe src="week3/Challenge3/justin.html" title="Week 3: Bootstrap Preview"></iframe>
+            </div>
         </div>
 
-        <div class="archive">
+        <div class="archive mt-4">
             <h2>Weekly Updates Archive</h2>
-            <!-- Add buttons for previous weekly updates here -->
-            <a href="week1/justin.html">
-                <button class="button">Week 1: Justin Bieber Fanpage</button>
-            </a>
-            <a href="week2/Challenge1/home.html">
-                <button class="button">Week 2: CSS</button>
-            </a>
-            <a href="week3/Challenge3/justin.html">
-                <button class="button">Week 3: Bootstrap</button>
-            </a>
+            <a href="week1/justin.html" class="btn btn-custom mb-2">Week 1: Justin Bieber Fanpage</a>
+            <a href="week2/Challenge1/home.html" class="btn btn-custom mb-2">Week 2: CSS</a>
+            <a href="week3/Challenge3/justin.html" class="btn btn-custom mb-2">Week 3: Bootstrap</a>
             <!-- Add more buttons as needed -->
         </div>
     </div>
     
-    <div class="footer">
+    <div class="footer text-center">
         <p>&copy; 2024 Ben</p>
     </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
