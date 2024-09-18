@@ -1,0 +1,58 @@
+ELEMENT PROPERTIES
+element.XXX
+
+Content
+.innerHTML: "<p>Hello!</p> -> will be interpreted by browser as HTML code, as opposed to plain text
+.innerText: "Hello!" -> will be interpreted by browser as plain text
+
+
+Form element-specific properties
+.value: for things like <input>, <textarea>, <select>
+.checked: for checkboxes and radios
+.placeholder: placeholder text for an input element
+
+Style/Layour elements
+.style.backgroundColor: Edits inline CSS elements
+.className: gets/sets the class name of element
+
+
+Attributes/Identification purposes
+.id: unique ID of element
+
+
+
+
+
+
+OTHER COMMANDS
+console.log("string"): prints into the console (chrome dev tools)
+console.log(document.getElementById("id")): will let you see what HTML input you're working with in the console
+
+When adding event listeners
+document.getElementById("justin-btn").addEventListener('mouseover', mouse_over);
+don't add parenthesis () behind the function you're calling, or it will be called immediately
+WRONG CODE: document.getElementById("justin-btn").addEventListener('mouseover', mouse_over());
+
+document.querySelectorAll(#id) returns a NodeList containing elements that match the selector (#id). 
+if elements are contained within a div, selecting the div's #id will select all elements within the div
+
+array.forEach(function): loops through each element in the array and calls the function
+array.forEach(btn => function): basically the javascript equivalent of 
+py
+    for btn in array:
+        function
+.py
+
+
+
+JAVASCRIPT EVENTS
+onclick
+onchange - an HTML element has been changed
+oninput - user inputs something in an HTML element
+onmouseover
+onmouseout
+onkeypress - user presses a key on a keyboard
+onload - the browser has finished loading the page
+
+
+
