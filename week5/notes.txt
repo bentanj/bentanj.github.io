@@ -1,0 +1,23 @@
+BASIC API GET REQUEST (asynchronous)
+let api_endpoint_url = 'http://krazywoman.com/krazystars/api/star/read.php'
+
+    axios.get(api_endpoint_url) //making a GET request and sending it to the url
+    .then(response => {
+        //Inspect the response in JS Console
+        console.log(response);
+    }) 
+    .catch((error) => {
+        console.log(error.message);
+    })
+
+
+SYNCHRONOUS: waiting till an action is completed before continuing 
+ASYNCHRONOUS: move on to next line while function is in progress -> Allows webpages to render first before all APIs are fully called
+
+
+`` - Template literals (study on this) current understanding is that they behave like python's F-strings -> using ${} to format variables
+
+DON'T USE INNERHTML. use createElement and createTextNode or you'll get penalised
+
+
+<body onload = "get_all()"> : Allows you to instantly call a function on loading a webpage
